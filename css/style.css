@@ -54,6 +54,11 @@ background-color: #e9e9e9;
     font-family: 'Aclonica', sans-serif;
     color: #000000;
 }
+.font-footer-dark{
+    font-family: 'Aclonica', sans-serif;
+    color: #3d0049;
+    font-size: 20px;
+}
 
 
 .paragraph{
@@ -64,6 +69,7 @@ background-color: #e9e9e9;
 .paragraph-dark{
     font-family: 'Montserrat', sans-serif;
     color: rgb(14, 7, 7);
+    font-size: 15px;
 }
 
 
@@ -85,17 +91,17 @@ background-color: #e9e9e9;
 
 .link-size-top{
 
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Aclonica', sans-serif;
     color: #4e008d;
     
-    font-size: 22px;
+    font-size: 15px;
 }
 .link-size-top:hover{
 
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
     background-color:  #4e008d;
-    font-size: 25px;
+    
 }
 nav ul li.active{
 
