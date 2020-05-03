@@ -1,10 +1,3 @@
-
-
-function toggleModal(){
-    var instance = M.Modal.getInstance($('#modal3'));
-    instance.open();
-}
-
 $(document).ready(function(){
     $('.modal').modal();
     $('.parallax').parallax();
@@ -24,15 +17,29 @@ $(document).ready(function(){
         outDuration: 500,
     });
     $(".dropdown-trigger").dropdown();
-
+    
+    
 })
+
+$("#new-projects").load("index.html #footer" );
+
 
 
 
 function hoverModal(){
     var instance = M.Tooltip.getInstance($('#modal1'));
     instance.open();
+    
 }
+
+
+function toggleModal(){
+    var instance = M.Modal.getInstance($('#modal3'));
+    instance.open();
+}
+
+$("#floating-action").load("index.html #floating-action" );
+
 
 
 
