@@ -1,5 +1,6 @@
 $(document).ready(function(){
     $('.modal').modal();
+    $('.pushpin').pushpin();
     $('.parallax').parallax();
     $('.sidenav').sidenav();
     $('.slider').slider({full_width: true});
@@ -17,6 +18,8 @@ $(document).ready(function(){
         outDuration: 500,
     });
     $(".dropdown-trigger").dropdown();
+    $('.collapsible').collapsible();
+    $('.scrollspy').scrollSpy();
     
     
 })
@@ -38,8 +41,15 @@ function toggleModal(){
     instance.open();
 }
 
-$("#floating-action").load("index.html #floating-action" );
 
+$('.pushpin-demo-nav').each(function() {
+    var $this = $(this);
+    var $target = $('#' + $(this).attr('data-target'));
+    $this.pushpin({
+      top: $target.offset().top,
+      bottom: $target.offset().top + $target.outerHeight() - $this.height()
+    });
+  });
 
 
 
