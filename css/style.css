@@ -1,3 +1,19 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+ main {
+    flex: 1 0 auto;
+ }
+ .page-footer{
+     position: relative;
+     float: bottom ;
+ }
+
+html, body {
+    height: 100%;
+  }
 
 body, .black_widow{
     background-color: #ffffff;
@@ -13,28 +29,11 @@ body, .black_widow{
 
 
 .parallax-container{
-    min-height: 680px;
+    min-height: 600px;
     height: auto;
 }
-.icon-coffee{
-    color: #7c1dbb;
-}
 
-
-.card-coffee1{
-    background-color:  #7c1dbb;
-}
-.card-coffee1 :hover{
-    
-    background-color:  #53127e;
-    
-}
-
-.card .card-reveal{
-     background-color: #ffffff;
-     color:#6a0074;
-}
-
+/* global used fonts and styles */
 .footer-one{
 background-color: #fffbfe;
 box-shadow: 0px 5px 5px 10px rgb(224, 224, 224);
@@ -42,9 +41,6 @@ box-shadow: 0px 5px 5px 10px rgb(224, 224, 224);
 .footer-two{
 background-color: #e9e9e9;
 }
-
-
-
 .font-header{
     font-family: 'Aclonica', sans-serif;
     color: #f5f5f5;
@@ -54,99 +50,127 @@ background-color: #e9e9e9;
     font-family: 'Aclonica', sans-serif;
     color: #000000;
 }
+
+.font-sub-dark{
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+}
+
+.font-sub{
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(230, 230, 230);
+}
 .font-footer-dark{
     font-family: 'Aclonica', sans-serif;
     color: #3d0049;
     font-size: 20px;
 }
 
-
 .paragraph{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
     color: rgb(252, 252, 252);
 }
 
 .paragraph-dark{
-    font-family: 'Montserrat', sans-serif;
-    color: rgb(14, 7, 7);
-    font-size: 15px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: rgb(18, 0, 51);
+    font-size: 20px;
 }
 
-
-.btn-top{
-    background-color: rgb(201, 0, 0);
+.font-action-dark{
+    font-family: 'Open Sans', sans-serif;
+    color: #00265f;
+    margin: 30px 0px;
+    font-size: 30px;
+    font-weight: 700;
 }
 
+/* info card settings */
 .card-panel{
     height: 350px;
-    
 }
+.card-coffee1{
+    background-color:  #7c1dbb;
+}
+.card-coffee1 :hover{
+    background-color:  #53127e;
+}
+.card .card-reveal{
+     background-color: #ffffff;
+     color:#6a0074;
+}
+
+/* carousal section */
 .carousel{
     height: 500px ;
     margin-top: 0px;
-    
 }
 
-
-
-.link-size-top{
-
-    font-family: 'Aclonica', sans-serif;
-    color: #4e008d;
-    
-    font-size: 15px;
+.icon-coffee{
+    color: #7c1dbb;
 }
-.link-size-top:hover{
 
-    font-family: 'Montserrat', sans-serif;
-    color: #ffffff;
-    background-color:  #4e008d;
-    
-}
-nav ul li.active{
+/* buttons used for action */
 
-    font-family: 'Montserrat', sans-serif;
-    color: #0e76ec;
-    background-color: transparent;
-} 
+
 
 .link-size-action{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: #9c0bfc;
     background-color: rgb(255, 255, 255);
     font-size: 20px;
-    font-weight: 700;
-    margin: 10px;
-    padding-left: 10px;
+    font-weight: 400;
     text-decoration: underline;
     border-radius: 5px;
-    
-
 }
+
 .link-size-action:hover{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
     color: #f8fbff;
     background-color: #9c0bfc;
 }
 
-
 .link-size-menu{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
     color: #9c0bfc;
     background-color: rgb(255, 255, 255);
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 400;
     margin: 10px;
     padding-left: 10px;
     text-decoration: underline;
     border-radius: 5px;
-    
 }
 
 .link-size-menu :hover{
     color: #f8fbff;
     background-color: #9c0bfc;
 }
+
+.link-size-top{
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #4e008d;
+    font-size: 15px;
+    
+}
+.link-size-top:hover{
+
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #ffffff;
+    background-color:  #4e008d;
+    
+}
+
+
+/* nav bar items */
+
+
+nav ul li.active{
+
+    font-family: 'Montserrat Alternates', sans-serif;
+    color: #0e76ec;
+    background-color:  transparent;
+} 
 
 .sidenav li>a {
     color: rgba(55, 1, 92, 0.87);
@@ -156,14 +180,14 @@ nav ul li.active{
     height: 48px;
     line-height: 48px;
     padding: 0 32px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
     text-decoration: underline;
 }
 .sidenav li>a:hover{
     background-color:  rgba(55, 1, 92, 0.87);
     color: rgba(255, 255, 255, 0.87);
     font-size: 22px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .dropdown-content {
@@ -183,17 +207,78 @@ nav ul li.active{
     
 }
 .dropdown-content li>a, .dropdown-content li>span {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat Alternates', sans-serif;
     font-size: 16px;
     color: #4e008d;
     display: flex;
     line-height: 24px;
     padding: 14px 16px;
-   
+}
+
+
+/* table of actinon center */
+table{
+    width: 100%;
+    display: inline-flexbox;
+    border: 0px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    box-shadow: black 5 5;
+}
+td, th {
+    border: 2px black;
+    padding:2px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 20px;
+}
+
+
+/* about us */
+
+.mission-txt{
+    display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  font-size: 90px;
+  font-family: 'Cookie', cursive;
+  color: rgb(255, 230, 4);
+}
+
+.main-mission{
+    background-color: rgb(28, 1, 63);
+    line-height: 1100px;
+    text-align: center;
+    height: 1100px; 
+    width: 100%;
+    
     
 }
 
 
+
+.pin-top {
+  position: relative;
+}
+
+
+.pin-bottom {
+  position: fixed;
+}
+
+
+.pinned {
+  position: fixed !important;
+}
+
+
+
+
+
+
+/* font-family: 'Cookie', cursive;
+font-family: 'Baloo Tamma 2', cursive;
+font-family: 'Aclonica', sans-serif;
+font-family: 'Montserrat Alternates', sans-serif; */
 
 
 
