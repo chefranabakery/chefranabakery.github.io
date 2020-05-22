@@ -5,6 +5,7 @@ $(document).ready(function(){
     $('.sidenav').sidenav();
     $('.slider').slider({full_width: true});
     $('.myreviews').carousel({
+        
         numVisible: 7,
         shiftValue: 1,
         padding: 55,
@@ -50,6 +51,7 @@ $('.pushpin-demo-nav').each(function() {
       bottom: $target.offset().top + $target.outerHeight() - $this.height()
     });
   });
+
 
 
 
