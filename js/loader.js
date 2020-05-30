@@ -8,13 +8,13 @@ $(document).ready(function(){
         
         numVisible: 7,
         shiftValue: 1,
-        padding: 55,
+        padding: 150,
     });
     $('.fixed-action-btn').floatingActionButton();
     $('.tooltipped').tooltip({
 
         inDuration: 100,
-        enterDelay: 1000,
+        enterDelay: 500,
         exitDelay: 100,
         outDuration: 500,
     });
@@ -42,7 +42,7 @@ function toggleModal(){
     instance.open();
 }
 
-
+// push pin
 $('.pushpin-demo-nav').each(function() {
     var $this = $(this);
     var $target = $('#' + $(this).attr('data-target'));
@@ -53,18 +53,27 @@ $('.pushpin-demo-nav').each(function() {
   });
 
 
-
-
-
- var prevScrollpos = window.pageYOffset;
-  window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-      document.getElementById("top").style.top = "0";
-    } else {
-      document.getElementById("top").style.top = "-100px";
+$(function(){
+  var scroll = $(document).scrollTop();
+  var navHeight = $('.navbar-fixed').outerHeight();
+  $(window).scroll(function(){
+    var scrolled = $(document).scrollTop();
+    if (scrolled > navHeight){
+      $('.navbar-fixed').addClass('animate');
     }
-    prevScrollpos = currentScrollPos;
-  }
+    else{
+      $('.navbar-fixed').removeClass('animate');
+    }
+    if(scrolled > scroll){
+      $('.navbar-fixed').removeClass('sticky');
+    }else{
+      $('.navbar-fixed').addClass('sticky');
+    
+    }
+    scroll = $(document).scrollTop();
+  })
+}
+)
+
 
 
