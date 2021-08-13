@@ -1,0 +1,35 @@
+body {
+  background-color: #272727;
+  color: #fff;
+}
+
+body header .hero {
+  font-family: "EB Garamond";
+}
+
+body section {
+  margin-top: 150px;
+  position: relative;
+  top: 100px;
+}
+
+body section .mf {
+  margin-left: 100px;
+}
+
+body section .heroSec {
+  font-family: "EB Garamond";
+}
+
+body section .lift {
+  font-family: "Montserrat";
+}
+
+body section img {
+  max-height: 20vh;
+  max-width: 20vw;
+  position: relative;
+  left: 130px;
+  top: 30px;
+}
+/*# sourceMappingURL=career.css.map */
