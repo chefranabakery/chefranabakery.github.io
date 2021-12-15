@@ -21,6 +21,7 @@ $(document).ready(function(){
     $(".dropdown-trigger").dropdown();
     $('.collapsible').collapsible();
     $('.scrollspy').scrollSpy();
+    $('.materialboxed').materialbox();
     
     
 })

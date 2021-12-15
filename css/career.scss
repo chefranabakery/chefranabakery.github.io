@@ -33,8 +33,10 @@ body{
         margin-top: 150px;
         position: relative;
         top: 100px;
+        
         .mf{
             margin-left: 100px;
+            
         }
         .heroSec{
 
@@ -45,13 +47,32 @@ body{
             
         }
         img{
-            max-height: 20vh;
-            max-width: 20vw;
+            max-width: 30vw;
+            max-height: 40vh;
             position: relative;
-            left: 130px;
-            top: 30px;
+            // left: 130px;
+            // top: 30px;
+        }
+        .job{
+            margin: 100px;
+            font-family: fonts(secondary);
         }
       }
+      .img-s{
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        // max-height: 40vh;
+        // position: relative;
+      }
+      .heroSec-s{
+
+        font-family: fonts(main);
+    }
+    .lift-s{
+        font-family: fonts(secondary);
+        
+    }
       
     
 }

@@ -26,10 +26,27 @@ body section .lift {
 }
 
 body section img {
-  max-height: 20vh;
-  max-width: 20vw;
+  max-width: 30vw;
+  max-height: 40vh;
   position: relative;
-  left: 130px;
-  top: 30px;
+}
+
+body section .job {
+  margin: 100px;
+  font-family: "Montserrat";
+}
+
+body .img-s {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+body .heroSec-s {
+  font-family: "EB Garamond";
+}
+
+body .lift-s {
+  font-family: "Montserrat";
 }
 /*# sourceMappingURL=career.css.map */
